@@ -23,6 +23,7 @@ app.get("/:shortId",async(req,res)=>{
     }
   }
 )
+console.log(entry)
 res.redirect(entry.redirectURL)
 })
 app.listen(PORT,()=>console.log('app is running'))
