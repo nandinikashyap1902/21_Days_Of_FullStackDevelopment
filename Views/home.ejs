@@ -27,12 +27,15 @@
         <th>Clicks</th>
     </thead>
     <tbody>
-        <% urls.forEach(i => { %>
-         <td><%=i+1  %></td>
-         <td><%= url.ShortID %></td>
-         <td><%= url.redirectURL %></td>
-         <td><%= url.visitHistory.length %></td>
-        <% }) %>
+        <% urls.forEach((url,i) => { %>
+            <tr>
+
+                <td><%=i + 1%></td>
+                <td><%=url.shortId  %></td>
+                <td><%=url.redirectURL  %></td>
+                <td><%=url.visitHistory.length  %></td>
+               <% }) %>
+            </tr>
     </tbody>
   </table>
  <% } %>
