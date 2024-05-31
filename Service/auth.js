@@ -11,7 +11,6 @@ function setUser(user){
         secret
     )
 }
-
 function getUser(token){
    // return sessionIdToUserMap.get(id)
    if(!token) return null;
